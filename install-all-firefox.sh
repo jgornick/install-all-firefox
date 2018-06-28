@@ -43,7 +43,7 @@ release_type=""
 binary_folder="/Contents/MacOS/"
 uses_v2_signing=false
 
-specified_locale=$2
+specified_locale=${2:-$locale_default}
 
 if [[ "${3}" == "no_prompt" ]]; then
     no_prompt=true
